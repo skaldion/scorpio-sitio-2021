@@ -2,8 +2,94 @@
 layout: base.ejs
 ---
 <%- include('/hero-cta', {
-        mainText: 'Hello world!',
-        secondaryText: 'This is our eleventy tepmlate.',
-        ctaButtonText: 'Click me!'
+        mainText: 'QUÍMICAS SCORPIO',
+        secondaryText: 'Somos una empresa 100% mexicana con más de 30 años de experiencia en el sector de adhesivos industriales y escolares ',
+        thirdText: 'Atendiendo todo tipo de mercado formulando a la medida del usuario.',
+        ctaButtonText: 'Contáctanos',
+        additionalClasses: 'hero-bg'
     })
+%>
+<%- include('/cta', {
+
+    mainText: 'Nuestra Respuesta Ante la Pandemia',
+    secondaryText: 'Todas nuestras entregas se realizan sin contacto físico'
+    })
+%>
+
+<%-include('/productos', {
+additionalClasses: 'white-bg'
+  })
+%>
+
+<%- include('/features', {
+title: '¿Porqué escoger a Químicas Scorpio?',
+description: '',
+features: [
+{
+image: { src: '/images/logo.png', alt: 'Hecho a la medida' },
+heading: 'Hecho a la Medida',
+description: 'Este aspecto es innegociable en nuestros productos.'
+},{
+image: { src: '/images/logo.png', alt: 'Agilidad en Resolución' },
+heading: 'Agilidad en Resolución',
+description: 'Gracias a nuestra basta experiencia tenemos las capacidades necesarias.'
+},{
+image: { src: '/images/logo.png', alt: 'Eficiencia' },
+heading: 'Eficiencia',
+description: 'Nunca dejamos de innovar y buscar nuevas fórmulas para  ofrecer las mejores soluciones del mercado.'
+},{
+image: { src: '/images/logo.png', alt: 'Eficacia' },
+heading: 'Eficacia',
+description: 'Creamos productos de alta calidad a precios competitivos en el mercado.'
+},{
+image: { src: '/images/logo.png', alt: 'Calidad' },
+heading: 'Calidad',
+description: 'Todos nuestros productos cuentan con las más altas medidas de calidad.'
+},{
+image: { src: '/images/logo.png', alt: 'Consistencia' },
+heading: 'Consistencia',
+description: 'Aseguramos el mejor desempeño en el producto.'
+},{
+image: { src: '/images/logo.png', alt: 'Accesibilidad' },
+heading: 'Accesibilidad',
+description: 'En costos somos la mejor opción.'
+},{
+image: { src: '/images/logo.png', alt: 'Disponibilidad' },
+heading: 'Disponibilidad',
+description: 'En tiempos de entrega, es una garantía.'
+}
+],
+additionalClasses: 'dark-blue-bg'
+})
+%>
+
+
+<%- include('/carousel') %>
+
+<%-include('/cta', {
+
+mainText: 'Adhesivos a la medida',
+secondaryText: '¿No encontraste lo que estabas buscando? Desarrollamos soluciones y productos a la medida.'
+})%>
+
+<%- include('/features', {
+        title: 'Certificaciones',
+        description: 'En Químicas Scorpio contamos con las siguientes certificaciones en nuestra empresa y nuestros productos',
+        features: [
+             {
+                image: { src: "/images/logo.png", alt: "ISO 9001"},
+                heading: 'ISO 9001:2000',
+                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+                    },{
+                image: { src: "/images/logo.png", alt: "ESR"},
+                heading: 'Empresa Socialmente Responsable',
+                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+                    },{
+                image: { src: "/images/logo.png", alt: "Certificacion"},
+                heading: 'Certificación 3',
+                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
+            }
+         ],
+additionalClasses: 'white-bg'
+})
 %>

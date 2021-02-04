@@ -21,7 +21,16 @@ a {
 
 h1 {
   color: colors.$white;
-  background-color: colors.$purple;
+  background-color: colors.$light-blue;
   border-radius: 10px;
   margin-top: 30px;
+}
+.white-bg {
+  background-color: colors.$white;
+  color: colors.$blue-scorp;
+}
+
+.dark-blue-bg {
+  background-color: colors.$blue-scorp;
+  color: colors.$white;
 }

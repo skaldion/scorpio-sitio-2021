@@ -1,0 +1,35 @@
+@use "colors";
+.productos{
+  background-color: colors.$white;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productos-head{
+  text-align: center;
+}
+
+.product-card {
+  flex: 1 16%;
+}
+.product-image img {
+  max-width: 100%;
+}
+.product-info {
+  margin-top: auto;
+}
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+.products .product-card:first-child,
+.products .product-card:nth-child(2) {
+  flex: 2 46%;
+}
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 46%;
+  }
+}

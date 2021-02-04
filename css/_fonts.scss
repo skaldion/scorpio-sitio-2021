@@ -1,0 +1,14 @@
+$hero-h1-size: 50px;
+
+@font-face {
+  font-family: 'LarkNeue';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('LarkeNeue'),
+  url('Larke Neue Regular.ttf') format('truetype');
+}
+
+.navigation-bar-top {
+  font-family: 'LarkNeue', Arial;
+}

@@ -1,0 +1,34 @@
+<section class="footer-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h5>Acerca de Scorpio</h5>
+                <ul>
+                    <p>Somos una empresa 100% mexicana dedicada a la creación de adhesivos</p>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5>Contacto</h5>
+                <ul>
+                    <li>Teléfono</li>
+                    <li>Email</li>
+                    <li>Redes Sociales</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5>Páginas</h5>
+                <ul>
+                    <% collections.all.forEach((navPage) => { %>
+                        <% if (!navPage.data || !navPage.data.title) return;%>
+                        <li>
+                            <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"
+                               href="<%- navPage.url %>">
+                                <%= navPage.data.title %>
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+@use "colors";
+
+.cta-section{
+  padding: 10px 0;
+  background-color: colors.$blue-scorp;
+  color: colors.$white;
+  h2{
+    margin-left: 6em;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  p{
+    margin-left: 12em;
+    font-size: 100%;
+  }
+  .btn-primary{
+    background-color: colors.$light-blue;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
