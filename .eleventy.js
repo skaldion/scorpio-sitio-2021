@@ -1,4 +1,6 @@
 const fs = require('fs');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setTemplateFormats(['ejs', 'md', 'html', 'txt']);
@@ -6,10 +8,30 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.setUseGitIgnore(false);
 
 	eleventyConfig.addPassthroughCopy('images/');
+	eleventyConfig.addPassthroughCopy({'js/app': 'assets/app'});
 	eleventyConfig.addPassthroughCopy({ 'site/_processed': 'assets/' });
 
 	eleventyConfig.setEjsOptions({
 		rmWhitespace: true,
+	});
+
+	/* Markdown Overrides */
+	let markdownLibrary = markdownIt({
+		html: true,
+		breaks: true,
+		linkify: true
+	});
+
+	eleventyConfig.setLibrary("md", markdownLibrary);
+
+	eleventyConfig.addCollection("latestPosts", function(collectionApi) {
+		return collectionApi.getFilteredByTag('blog').filter((item, index) => index < 2 );
+	});
+
+	eleventyConfig.addCollection("sortedServices", function(collectionApi) {
+		return collectionApi.getFilteredByTag('servicios').sort((a, b) => {
+			return a.data.order - b.data.order;
+		});
 	});
 
 	eleventyConfig.setBrowserSyncConfig({

@@ -1,95 +1,89 @@
 ---
 layout: base.ejs
 ---
-<%- include('/hero-cta', {
-        mainText: 'QUÍMICAS SCORPIO',
-        secondaryText: 'Somos una empresa 100% mexicana con más de 30 años de experiencia en el sector de adhesivos industriales y escolares ',
-        thirdText: 'Atendiendo todo tipo de mercado formulando a la medida del usuario.',
-        ctaButtonText: 'Contáctanos',
-        additionalClasses: 'hero-bg'
-    })
-%>
-<%- include('/cta', {
 
-    mainText: 'Nuestra Respuesta Ante la Pandemia',
-    secondaryText: 'Todas nuestras entregas se realizan sin contacto físico'
-    })
-%>
-
-<%-include('/productos', {
-additionalClasses: 'white-bg'
-  })
-%>
-
-<%- include('/features', {
-title: '¿Porqué escoger a Químicas Scorpio?',
-description: '',
-features: [
-{
-image: { src: '/images/logo.png', alt: 'Hecho a la medida' },
-heading: 'Hecho a la Medida',
-description: 'Este aspecto es innegociable en nuestros productos.'
-},{
-image: { src: '/images/logo.png', alt: 'Agilidad en Resolución' },
-heading: 'Agilidad en Resolución',
-description: 'Gracias a nuestra basta experiencia tenemos las capacidades necesarias.'
-},{
-image: { src: '/images/logo.png', alt: 'Eficiencia' },
-heading: 'Eficiencia',
-description: 'Nunca dejamos de innovar y buscar nuevas fórmulas para  ofrecer las mejores soluciones del mercado.'
-},{
-image: { src: '/images/logo.png', alt: 'Eficacia' },
-heading: 'Eficacia',
-description: 'Creamos productos de alta calidad a precios competitivos en el mercado.'
-},{
-image: { src: '/images/logo.png', alt: 'Calidad' },
-heading: 'Calidad',
-description: 'Todos nuestros productos cuentan con las más altas medidas de calidad.'
-},{
-image: { src: '/images/logo.png', alt: 'Consistencia' },
-heading: 'Consistencia',
-description: 'Aseguramos el mejor desempeño en el producto.'
-},{
-image: { src: '/images/logo.png', alt: 'Accesibilidad' },
-heading: 'Accesibilidad',
-description: 'En costos somos la mejor opción.'
-},{
-image: { src: '/images/logo.png', alt: 'Disponibilidad' },
-heading: 'Disponibilidad',
-description: 'En tiempos de entrega, es una garantía.'
-}
+<%- include('/hero', {
+mainText: 'SOLECAP',
+secondaryText: [
+'Somos una empresa de prestación de servicios enfocada en cada uno de los elementos de mantenimiento ya sea en oficinas corporativas o edificios industriales alrededor de la cadena de suministro.',
 ],
-additionalClasses: 'dark-blue-bg'
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'index-hero-bg'
 })
 %>
 
+<%- include('/banner', {
+mainText: 'Nuestra posición ante la pandemia',
+secondaryText: [
+'En Solecap sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de tí y los tuyos.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'solecap-purple-light-bg',
+href: '/blog/pandemia'
+})
+%>
 
-<%- include('/carousel') %>
+<%- include('/side-image', {
+heading: 'Integrated Facilities Management',
+image: { src: '/images/facility.jpg', alt: 'Un ingeniero dándole mantenimiento al equipo industrial de la empresa.' },
+features: [
+{ title: '', description: 'Nuestro objetivo es ayudarte a tener un desempeño excelente manteniendo todos los insumos relacionados con la cadena de producción en perfecto estado.' },
+{ title: '', description: '' },
+],
+additionalClasses: 'solecap-purple-bg',
+imgClasses: "order-2"
+})
+%>
 
-<%-include('/cta', {
+<%- include('/servicios') %>
 
-mainText: 'Adhesivos a la medida',
-secondaryText: '¿No encontraste lo que estabas buscando? Desarrollamos soluciones y productos a la medida.'
-})%>
+<%- include('/banner', {
+mainText: 'Sanitización de espacios',
+secondaryText: [
+'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
+],
+ctaButtonText: 'Leer más',
+additionalClasses: 'solecap-green-light-bg',
+href: '/blog/pandemia'
+})
+%>
 
-<%- include('/features', {
-        title: 'Certificaciones',
-        description: 'En Químicas Scorpio contamos con las siguientes certificaciones en nuestra empresa y nuestros productos',
-        features: [
-             {
-                image: { src: "/images/logo.png", alt: "ISO 9001"},
-                heading: 'ISO 9001:2000',
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
-                    },{
-                image: { src: "/images/logo.png", alt: "ESR"},
-                heading: 'Empresa Socialmente Responsable',
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
-                    },{
-                image: { src: "/images/logo.png", alt: "Certificacion"},
-                heading: 'Certificación 3',
-                description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
-            }
-         ],
-additionalClasses: 'white-bg'
+<%- include('/side-image', {
+heading: 'Ventaja Competitiva',
+image: { src: '/images/ventajas.jpg', alt: 'Un vistazo de abajo hacia arriba de unos edificios al atardecer.' },
+features: [
+{ title: 'Servicios a la medida', description: 'Ofrecemos a nuestro cliente un producto hecho a la medida de sus necesidades que va desde lo más específico hasta un servicio integral. Nos enfocamos en ofrecer resultados desde el primer momento a precios accesibles y competitivos sin descuidar la calidad.' },
+{ title: 'Empresa 100% mexicana', description: 'Somos una empresa 100% mexicana que conoce la cultura e idiosincrasia del trabajo requerido por cada cliente.' },
+],
+additionalClasses: 'solecap-green-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/cards', {
+mainText: 'Historias de Éxito',
+secondaryText: '',
+cards: [
+{ imgAlt: 'Una mesa con diferentes tipos de solventes y pinturas.', imgSrc: '/images/paint.jpg', title: 'Empresa de Pinturas y manejo de Solventes', description: ''},
+{ imgAlt: 'Una oficina con dieciocho cabinas y 18 sillas.', imgSrc: '/images/office.jpg', title: 'Desarrollo en corporativo y adecuación', description: ''},
+{ imgAlt: 'Un motor de automóvil con partes nuevas.', imgSrc: '/images/engine.jpg', title: 'Fabricante de Autos', description: ''},
+],
+noButton: true,
+ctaButtonText: 'Cotizar ahora',
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/certificaciones') %>
+
+<%- include('/cta', {
+mainText: 'Solecap, expertos en facility services',
+secondaryText: [
+'Somos una empresa 100% dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuáles son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'light-blue-bg',
+noButton: false,
+href: ''
 })
 %>
