@@ -3,10 +3,12 @@ title: 'A la medida'
 permalink: 'a-la-medida/index.html'
 ---
 
-<section class="hero-cta">
-    <div class="hero-message">
-        <h1>ACERCA DE NOSOTROS</h1>
-        <h3>Químicas Scorpio es una empresa mexicana con 30 años de existencia,</h3>
-        <h4>constituida por una mujer que ofrece productos hechos a la medida de una excelente calidad y costos accesibles.</h4>
-    </div>
-</section>
+<%- include('/hero', {
+mainText: 'Químicas Scorpio',
+secondaryText: [
+'Somos una empresa 100% mexicana con más de 30 años de experiencia en el sector de adhesivos industriales y escolares atendiendo todo tipo de mercado formulando a la medida del usuario.',
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'index-hero-bg'
+})
+%>
