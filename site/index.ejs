@@ -38,7 +38,16 @@ href: '/a-la-medida'
 })
 %>
 
-<%- include('/pquimicasscorpio') %>
+<%- include('/grid', {
+mainText: '¿Porqué Químicas Scorpio?',
+elements: [
+{ htmlContent: '<h3>Productividad</h3><p>Tener unas instalaciones en estado óptimo te ayuda a generar un ambiente de trabajo positivo y la productividad de tus empleados puede verse incrementada.</p>'},
+{ htmlContent: '<h3>Presentación</h3><p>Contar con unos jardines e instalaciones bien cuidadas, es la mejor carta de presentación que puedes tener cuando recibas visitas importantes en tu oficina.</p>'},
+{ htmlContent: '<h3>Seguridad</h3><p>Haces sentir cuidados y protegidos a colaboradores y clientes en caso de una emergencia como sismos o incendios.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
 
 <%- include('/banner', {
 mainText: '¿Quieres comprar nuestros productos?',
@@ -50,3 +59,12 @@ href: ''
 %>
 
 <%- include('/certificaciones') %>
+
+<%- include('/banner', {
+mainText: '¿Dudas? ¡Acercate!',
+secondaryText: [],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'solecap-purple-light-bg',
+href: ''
+})
+%>
