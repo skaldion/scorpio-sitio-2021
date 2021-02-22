@@ -4,7 +4,7 @@
 
 .hero {
   min-height: 500px;
-  padding: 70px 0;
+  padding: 30px 0;
   h1 {
     font-size: fonts.$hero-h1-size;
     line-height: 60px;
@@ -54,7 +54,7 @@
   }
 
   @media (min-width: variables.$size-l) {
-    padding: 100px 0;
+    padding: 30px;
     .hero-message {
       max-width: 1000px;
       p {
