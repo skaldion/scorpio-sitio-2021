@@ -1,10 +1,10 @@
-<%- include('/cards', {
+<%- include('/product-cards', {
 mainText: 'Productos',
 secondaryText: '',
-cards: collections.sortedServices.map(servicio => servicio.data),
+cards: collections.productos.map(producto => producto.data),
 noButton: false,
 ctaButtonText: 'Cotizar ahora',
-    ctaHref: '/cotizaciones',
+    ctaHref: '',
 additionalClasses: 'grey-bg'
 })
 %>
