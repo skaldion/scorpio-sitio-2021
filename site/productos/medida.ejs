@@ -1,0 +1,65 @@
+---
+title: 'Adhesivos a la Medida'
+permalink: 'productos/adhesivos-a-medida/index.html'
+description: 'Adhesivos a la Medida'
+href: '/productos/adhesivos-a-medida'
+imgAlt: 'Adhesivo a la medida'
+imgSrc: '/images/bulk.jpg'
+order: 1
+price: Contáctanos
+---
+<%- include('/hero', {
+mainText: 'Adhesivos a la Medida',
+secondaryText: [
+'Formulación hecha a la medida, nos adaptamos a tus necesidades y especificaciones.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-ambien-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Adhesivos a la Medida',
+image: { src: '/images/garbage.jpg', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
+features: [
+{ title: '', description: 'En el caso de no contar en nuestro portafolio con el producto solicitado, nuestro equipo de químicos cuenta con más de 30 años de experiencia elaborando adhesivos.' },
+{ title: '', description: 'Para así crear desde cero un producto de calidad que se adapte totalmente a las necesidades del cliente.' },
+],
+additionalClasses: 'light-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Adhesivos a la Medida</h3><p>En el caso de no contar en nuestro portafolio con el producto solicitado, nuestro equipo de químicos cuenta con más de 30 años de experiencia elaborando adhesivos para así crear desde cero un producto de calidad que se adapte totalmente a las necesidades del cliente.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Adhesivos 100% a la Medida',
+secondaryText: [
+'¿No encuentras algún tipo de pegamento en específico? Nosotros lo podemos fabricar de acuerdo a las necesidades y especificaciones que tengas. Contáctanos.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'scorpio-green-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: '¿Quieres comprar este producto?',
+secondaryText: [
+'Nuestros clientes son lo principal en Químicas Scorpio. Ponte en contacto nosotros por cualquiera de nuestros medios y con gusto te daremos un presupuesto.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'solecap-green-light-bg',
+href: '/blog/pandemia'
+})
+%>

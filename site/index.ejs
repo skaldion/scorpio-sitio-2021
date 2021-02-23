@@ -26,10 +26,30 @@ href: ''
 
 <%- include('/servicios') %>
 
+<%- include('/features', {
+title: 'Nuestros Servicios',
+description: 'Se enfocan en dos ramas diferentes pero complementarias la una con la otra.',
+features: [
+{
+image: { src: '/images/producto-venta.jpeg', alt: 'Venta directa' },
+heading: 'Venta Directa de Producto',
+description: 'Contamos con adhesivos industriales y escolares de la más alta calidad. Formulados para atender cualquier necesidad solicitada por el cliente. Contamos con cuatro familias de adhesivos:',
+subFeatures: ['• Base Agua', '• Base Solvente', '• Hotmelt y termofusibles', '• Adhesivos Reactivos', '• Adhesivo para manualidades o pasta francesa']
+},{
+image: { src: '/images/medida.jpeg', alt: 'Química a la medida' },
+heading: ' Formulación de Producto a la Medida',
+description: 'En el caso de no contar en nuestro portafolio, con el producto solicitado, nuestro equipo de químicos cuenta con más de 30 años de experiencia elaborando adhesivos, para así crear un prducto que:',
+subFeatures: ['• Se adapte a las necesidades', '• Hecho a la medida', '• Creado en específico para el cliente']
+}
+],
+additionalClasses: 'sky-blue-bg'
+})
+%>
+
 <%- include('/cta', {
 mainText: 'Adhesivos a la medida',
 secondaryText: [
-'¿No encontraste lo que estabas buscando? Desarrollamos soluciones y productos a la medida.'
+'¿No encontraste lo que estabas buscando? Desarrollamos soluciones y adhesivos a la medida de sus necesidades.'
 ],
 ctaButtonText: 'Leer más',
 additionalClasses: 'light-blue-bg',
@@ -41,9 +61,21 @@ href: '/a-la-medida'
 <%- include('/grid', {
 mainText: '¿Porqué Químicas Scorpio?',
 elements: [
-{ htmlContent: '<h3>Productividad</h3><p>Tener unas instalaciones en estado óptimo te ayuda a generar un ambiente de trabajo positivo y la productividad de tus empleados puede verse incrementada.</p>'},
-{ htmlContent: '<h3>Presentación</h3><p>Contar con unos jardines e instalaciones bien cuidadas, es la mejor carta de presentación que puedes tener cuando recibas visitas importantes en tu oficina.</p>'},
-{ htmlContent: '<h3>Seguridad</h3><p>Haces sentir cuidados y protegidos a colaboradores y clientes en caso de una emergencia como sismos o incendios.</p>'},
+{ htmlContent: '<h3>A la Medida</h3><p>Nos adaptamos a tus necesidades y especificaciones.</p>'},
+{ htmlContent: '<h3>Agilidad</h3><p>Entendemos rápido pero solucionamos aún más rápido.</p>'},
+{ htmlContent: '<h3>Eficiencia</h3><p>Hacerlo con los menores recursos posibles.</p>'},
+{ htmlContent: '<h3>Eficacia</h3><p>Hacerlo en el menor tiempo posible.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Calidad</h3><p>En todo el proceso. </p>'},
+{ htmlContent: '<h3>Consistencia</h3><p>En el desempeño del producto.</p>'},
+{ htmlContent: '<h3>Accesibilidad</h3><p>En costo</p>'},
+{ htmlContent: '<h3>Disponibilidad</h3><p>En tiempo de entrega.</p>'},
 ],
 additionalClasses: 'grey-bg'
 })
@@ -53,7 +85,7 @@ additionalClasses: 'grey-bg'
 mainText: '¿Quieres comprar nuestros productos?',
 secondaryText: [],
 ctaButtonText: 'Contáctanos',
-additionalClasses: 'solecap-purple-light-bg',
+additionalClasses: 'scorpio-green-bg',
 href: ''
 })
 %>
@@ -64,7 +96,7 @@ href: ''
 mainText: '¿Dudas? ¡Acercate!',
 secondaryText: [],
 ctaButtonText: 'Contáctanos',
-additionalClasses: 'solecap-purple-light-bg',
+additionalClasses: 'scorpio-aqua-bg',
 href: ''
 })
 %>

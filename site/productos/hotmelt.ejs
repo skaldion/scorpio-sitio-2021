@@ -1,0 +1,66 @@
+---
+title: 'Hotmelt y Termofusibles'
+permalink: 'productos/hotmelt-y-termofusibles/index.html'
+description: 'Adhesivos Sólidos Secado rápido'
+href: '/productos/hotmelt-y-termofusibles'
+imgAlt: 'Adhesivo hotmelt'
+imgSrc: '/images/bulk.jpg'
+order: 1
+price: $5,000.00
+---
+<%- include('/hero', {
+mainText: 'Hotmelt y Termofusibles',
+secondaryText: [
+'Adhesivos sólidos de secado rápido que ya tuvieron una primera reacción y al agregarles calor se derriten recuperando sus cualidades de adhesión.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-ambien-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Hotmelt y Termofusibles',
+image: { src: '/images/garbage.jpg', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
+features: [
+{ title: '', description: 'Son adhesivos sólidos de secado rápido que ya tuvieron una primera reacción y al agregarles calor se derriten recuperando sus cualidades de adhesión. ' },
+{ title: '', description: 'Son dos tipos de adhesivo en esta familia: Hotmelt y Termofusibles' },
+],
+additionalClasses: 'light-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Hotmelt</h3><p>Adhesivo con 100% de sólidos que debe ser fundido o calentado para ser usado. Al entrar en contacto con una superficie a temperatura ambiente, se fusiona y fija rápidamente.</p>'},
+{ htmlContent: '<h3>Termofusibles</h3><p>Estos necesitan de la aplicación de calor para pegar y tienen una base de poliolefina, metaloceno. Contienen una cantidad considerable de resinas y ceras que mejoran la adherencia y resistencia del producto.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Adhesivos 100% a la Medida',
+secondaryText: [
+'¿No encuentras algún tipo de pegamento en específico? Nosotros lo podemos fabricar de acuerdo a las necesidades y especificaciones que tengas. Contáctanos.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'scorpio-green-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: '¿Quieres comprar este producto?',
+secondaryText: [
+'Nuestros clientes son lo principal en Químicas Scorpio. Ponte en contacto nosotros por cualquiera de nuestros medios y con gusto te daremos un presupuesto.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'solecap-green-light-bg',
+href: '/blog/pandemia'
+})
+%>

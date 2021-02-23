@@ -1,0 +1,67 @@
+---
+title: 'Adhesivos Reactivos'
+permalink: 'productos/adhesivos-reactivos/index.html'
+description: 'Base solvente con elementos catalizables'
+href: '/productos/adhesivos-reactivos'
+imgAlt: 'Adhesivo reactivo'
+imgSrc: '/images/bulk.jpg'
+order: 1
+price: $5,000.00
+---
+<%- include('/hero', {
+mainText: 'Adhesivos Reactivos',
+secondaryText: [
+'Adhesivos formados por una base solvente que cuenta con elementos catalizables de mayor sensibilidad, los cuales aceleran la reacción.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'serv-ambien-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Adhesivos Reactivos',
+image: { src: '/images/garbage.jpg', alt: 'Unos trabajadores cargando un camión de basura con varios objetos.' },
+features: [
+{ title: '', description: 'Están formados por una base solvente que cuenta con elementos catalizables de mayor sensibilidad, los cuales aceleran la reacción donde el pegamento no tiene pérdida de masa ni volumen, lo que permite tener sellados fiables.' },
+{ title: '', description: 'Las categorías que engloban estos adhesivos son: Cianocrilatos, Epoxis y Poliuretanos.' },
+],
+additionalClasses: 'light-blue-bg',
+imgClasses: ""
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Cianocrilatos</h3><p>Sirven para pegar goma, plástico-metal, madera,porcelana, cuero o corcho.</p>'},
+{ htmlContent: '<h3>Epoxis</h3><p>Permiten la unión de metales como el acero o aluminio y planchas de fibra.</p>'},
+{ htmlContent: '<h3>Poliuretanos</h3><p>encontramos paneles (sándwich, multicapa y aislados),celdas frigoríficas, paredes para aislamiento térmico. También son utilizados para muebles y decoración.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Adhesivos 100% a la Medida',
+secondaryText: [
+'¿No encuentras algún tipo de pegamento en específico? Nosotros lo podemos fabricar de acuerdo a las necesidades y especificaciones que tengas. Contáctanos.'
+],
+ctaButtonText: 'Contáctanos!',
+additionalClasses: 'scorpio-green-bg',
+noButton: false,
+href: ''
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/banner', {
+mainText: '¿Quieres comprar este producto?',
+secondaryText: [
+'Nuestros clientes son lo principal en Químicas Scorpio. Ponte en contacto nosotros por cualquiera de nuestros medios y con gusto te daremos un presupuesto.'
+],
+ctaButtonText: 'Contáctanos',
+additionalClasses: 'solecap-green-light-bg',
+href: '/blog/pandemia'
+})
+%>

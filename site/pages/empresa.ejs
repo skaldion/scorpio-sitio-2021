@@ -11,3 +11,45 @@ ctaButtonText: 'Contáctanos',
 additionalClasses: 'index-hero-bg'
 })
 %>
+
+<%- include('/features', {
+title: '',
+description: '',
+features: [
+{
+heading: 'Químicas Scorpio es una empresa 100% mexicana, fundada por Ofelia Pineda Cigales , una de las mujeres con más experiencia dentro de la rama química a nivel nacional. ',
+description: ''
+}],
+additionalClasses: 'dark-blue-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: 'Valores de Químicas Scorpio',
+elements: [
+{ htmlContent: '<h3>Calidad</h3><p>Este aspecto es innegociable en nuestros productos, los cuales siguen los más altos estándares. Desde nuestro nacimiento nuestro compromiso es ofrecer productos de calidad a precios competitivos.</p>'},
+{ htmlContent: '<h3>Personalización</h3><p>Gracias a nuestra basta experiencia tenemos las capacidades necesarias para desarrollar formulaciones de productos totalmente adaptables a lo que el cliente necesite.</p>'},
+{ htmlContent: '<h3>Constancia</h3><p>Nunca dejamos de innovar y buscar nuevas fórmulas para  ofrecer las mejores soluciones del mercado.</p>'},
+{ htmlContent: '<h3>Competitividad</h3><p>Creamos productos de alta calidad a precios competitivos en el mercado.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/features', {
+title: '',
+description: '',
+features: [
+{
+heading: 'Misión',
+description: 'Brindar el producto que se adapte a las necesidades del cliente, innovando cada día sin dejar de lado la calidad y competitividad. Así como brindar servicio de asesoría a los consumidores que lo requieran.'
+},{
+heading: 'Visión',
+description: 'Ser referentes en la industria de adhesivos, destacando de manera general con nuestros productos y servicio diferenciado.'
+}
+],
+additionalClasses: 'sky-blue-bg'
+})
+%>
+
+<%- include('/map') %>

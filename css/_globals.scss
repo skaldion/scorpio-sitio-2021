@@ -83,6 +83,21 @@ img {
   color: colors.$white;
 }
 
+.scorpio-aqua-bg {
+  background-color: lighten(colors.$scorpio-aqua-01, 50);
+  color: colors.$black;
+}
+
+.scorpio-darkblue-bg {
+  background-color: lighten(colors.$scorpio-dark-blue, 50);
+  color: colors.$white;
+}
+
+.scorpio-green-bg {
+  background-color: colors.$scorpio-green-01-rgb;
+  color: colors.$black;
+}
+
 .grey-bg {
   background-color: #f8f9fa;
   color: black;
@@ -179,7 +194,7 @@ img {
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("/images/workspace.jpg");
+  background-image: url("/images/heroBGScorpio.jpeg");
   background-color: colors.$softgray;
   background-blend-mode: darken;
   color: colors.$white;
