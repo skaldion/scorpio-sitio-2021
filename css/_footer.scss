@@ -3,7 +3,7 @@
 
 .footer-block {
   padding: 50px 0 200px;
-  background-color: colors.$blue-001;
+  background-color: colors.$scorpio-blue-01;
   color: colors.$white;
 
   .footer-section {
@@ -20,11 +20,11 @@
   }
 
   a {
-    color: colors.$blue-003;
+    color: lighten(colors.$scorpio-aqua-01, 15%);
     font-weight: bold;
     transition: all .2s ease-in-out;
     &:hover {
-      color: lighten(colors.$blue-003, 20%);
+      color: colors.$scorpio-aqua-01;
     }
   }
 
