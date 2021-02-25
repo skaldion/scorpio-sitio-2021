@@ -1,1 +1,14 @@
 $hero-h1-size: 50px;
+
+@font-face {
+  font-family: 'Din';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('D-DIN'),
+  url('D-DIN.ttf') format('truetype');
+}
+
+.navigation-bar-top {
+  font-family: 'Din', Arial;
+}
