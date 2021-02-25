@@ -9,6 +9,19 @@ $hero-h1-size: 50px;
   url('D-DIN.ttf') format('truetype');
 }
 
-.navigation-bar-top {
+@font-face {
+  font-family: 'LarkeBold';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('LarkeNeueBold'),
+  url('LarkeNeueBold.ttf') format('truetype');
+}
+
+body {
   font-family: 'Din', Arial;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'LarkeBold', serif;
 }
