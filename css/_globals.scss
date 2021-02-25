@@ -247,3 +247,9 @@ img {
   background-color: colors.$scorpio-green-05;
   color: colors.$white;
 }
+
+@include media-breakpoint-down(xs) {
+  .text-center-xs {
+    text-align: center;
+  }
+}
