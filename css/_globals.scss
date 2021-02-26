@@ -134,12 +134,45 @@ img {
   color: colors.$white;
 }
 
+.pasta-fran-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/porce.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
 .base-agua-bg {
   background-size: cover;
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/cardboard.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.adhesivo-medida-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/medida.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.reactiv-adh-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/table.jpg");
   background-color: colors.$softgray;
   background-blend-mode: darken;
   color: colors.$white;
