@@ -1,0 +1,316 @@
+@use 'fonts';
+@use 'colors';
+
+.icon {
+  &.disponibilidad {
+    .st0 {
+      fill: #F58E70;
+    }
+
+    .st1 {
+      fill: #5FE0ED;
+    }
+
+    .st2 {
+      fill: #48515A;
+    }
+
+    .st3 {
+      fill: #DEDEDD;
+    }
+
+    .st4 {
+      fill: #FFD15D;
+    }
+  }
+
+  &.accesibilidad {
+    .cls-1 {
+      fill: #dededd;
+    }
+
+    .cls-2 {
+      fill: #fff;
+    }
+
+    .cls-3 {
+      fill: #ffd15d;
+    }
+
+    .cls-4 {
+      fill: none;
+      stroke: #475059;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+
+    .cls-5 {
+      fill: #f58e70;
+    }
+
+    .cls-6 {
+      fill: #5fe0ed;
+    }
+
+    .cls-7 {
+      fill: #475059;
+    }
+  }
+
+  &.consistencia {
+    .st0 {
+      fill: #DEDEDD;
+    }
+
+    .st1 {
+      fill: #5FE0ED;
+    }
+
+    .st2 {
+      fill: #475059;
+    }
+
+    .st3 {
+      fill: #48515A;
+    }
+
+    .st4 {
+      fill: none;
+      stroke: #475059;
+      stroke-width: 2;
+      stroke-miterlimit: 10;
+    }
+
+    .st5 {
+      fill: #FFD15D;
+    }
+  }
+
+  &.calidad {
+    .cls-1, .cls-2, .cls-6 {
+      fill: none;
+    }
+
+    .cls-1 {
+      stroke: #475059;
+    }
+
+    .cls-1, .cls-6 {
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+
+    .cls-3 {
+      fill: #ffd15d;
+    }
+
+    .cls-4 {
+      fill: #5fe0ed;
+    }
+
+    .cls-5 {
+      fill: #fff;
+    }
+
+    .cls-6 {
+      stroke: #fff;
+    }
+
+    .cls-7 {
+      fill: #dededd;
+    }
+
+    .cls-8 {
+      fill: #f58e70;
+    }
+  }
+
+  &.eficacia {
+    .cls-1 {
+      fill: #dededd;
+    }
+
+    .cls-2 {
+      fill: #ffd15d;
+    }
+
+    .cls-11, .cls-12, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+      fill: none;
+    }
+
+    .cls-12, .cls-3, .cls-6, .cls-7, .cls-8, .cls-9 {
+      stroke: #475059;
+    }
+
+    .cls-11, .cls-3, .cls-4, .cls-6, .cls-9 {
+      stroke-miterlimit: 10;
+    }
+
+    .cls-12, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+      stroke-width: 2px;
+    }
+
+    .cls-11, .cls-4 {
+      stroke: #dededd;
+    }
+
+    .cls-5 {
+      fill: #f58e70;
+    }
+
+    .cls-6, .cls-7, .cls-8, .cls-9 {
+      stroke-linecap: round;
+    }
+
+    .cls-7, .cls-8 {
+      stroke-linejoin: round;
+    }
+
+    .cls-8 {
+      stroke-dasharray: 0 3.94069;
+    }
+
+    .cls-9 {
+      stroke-dasharray: 0 4;
+    }
+
+    .cls-10 {
+      fill: #fff;
+    }
+
+    .cls-11 {
+      stroke-width: 3px;
+    }
+  }
+
+  &.eficiencia {
+    .cls-1 {
+      fill: #5fe0ed;
+    }
+
+    .cls-2 {
+      fill: #dededd;
+    }
+
+    .cls-3 {
+      fill: #ffd15d;
+    }
+
+    .cls-4, .cls-7, .cls-9 {
+      fill: none;
+    }
+
+    .cls-10, .cls-4, .cls-7 {
+      stroke: #475059;
+      stroke-width: 2px;
+    }
+
+    .cls-10, .cls-4, .cls-9 {
+      stroke-miterlimit: 10;
+    }
+
+    .cls-5 {
+      fill: #475059;
+    }
+
+    .cls-6 {
+      fill: #f58e70;
+    }
+
+    .cls-7 {
+      stroke-linejoin: round;
+    }
+
+    .cls-10, .cls-8 {
+      fill: #fff;
+    }
+
+    .cls-9 {
+      stroke: #dededd;
+      stroke-width: 3px;
+    }
+  }
+
+  &.agilidad {
+    .cls-1 {
+      fill: #dededd;
+    }
+
+    .cls-2 {
+      fill: #ffd15d;
+    }
+
+    .cls-11, .cls-12, .cls-3, .cls-6, .cls-7, .cls-9 {
+      fill: none;
+    }
+
+    .cls-3, .cls-8, .cls-9 {
+      stroke: #475059;
+    }
+
+    .cls-11, .cls-12, .cls-3, .cls-6, .cls-7, .cls-8, .cls-9 {
+      stroke-miterlimit: 10;
+    }
+
+    .cls-11, .cls-12, .cls-3, .cls-7, .cls-8, .cls-9 {
+      stroke-width: 2px;
+    }
+
+    .cls-4 {
+      fill: #5fe0ed;
+    }
+
+    .cls-5 {
+      fill: #f58e70;
+    }
+
+    .cls-11, .cls-6 {
+      stroke: #dededd;
+    }
+
+    .cls-6 {
+      stroke-width: 3px;
+    }
+
+    .cls-7 {
+      stroke: #ffd15d;
+    }
+
+    .cls-8 {
+      fill: #fff;
+    }
+
+    .cls-9 {
+      stroke-linecap: round;
+    }
+
+    .cls-10 {
+      fill: #475059;
+    }
+
+    .cls-12 {
+      stroke: #fff;
+    }
+  }
+
+  &.medida {
+    .cls-1 {
+      fill: none;
+      stroke: #475059;
+      stroke-miterlimit: 10;
+      stroke-width: 2px;
+    }
+
+    .cls-2 {
+      fill: #ffd15d;
+    }
+
+    .cls-3 {
+      fill: #dededd;
+    }
+
+    .cls-4 {
+      fill: #475059;
+    }
+  }
+}

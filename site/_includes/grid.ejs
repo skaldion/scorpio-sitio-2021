@@ -7,7 +7,7 @@
         <% } %>
         <div class='row'>
     <% elements.forEach(data => {%>
-        <div class='col-md'>
+        <div class='<%- data.col ? data.col : 'col-md'%>'>
             <%- data.htmlContent %>
         </div>
     <%});%>

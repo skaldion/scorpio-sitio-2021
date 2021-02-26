@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('images/');
 	eleventyConfig.addPassthroughCopy({'js/app': 'assets/app'});
 	eleventyConfig.addPassthroughCopy({ 'site/_processed': 'assets/' });
+	eleventyConfig.addPassthroughCopy({ 'fonts/': 'assets/' });
 
 	eleventyConfig.setEjsOptions({
 		rmWhitespace: true,

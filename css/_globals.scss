@@ -89,7 +89,7 @@ img {
 }
 
 .scorpio-darkblue-bg {
-  background-color: lighten(colors.$scorpio-dark-blue, 50);
+  background-color: lighten(colors.$scorpio-blue-01, 50);
   color: colors.$white;
 }
 
@@ -100,7 +100,7 @@ img {
 
 .grey-bg {
   background-color: #f8f9fa;
-  color: black;
+  color: colors.$font-color-dark;
 }
 
 .city-bg {
@@ -195,5 +195,28 @@ img {
 }
 
 .bg-light-st {
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.bg-green-02 {
+  background-color: colors.$scorpio-green-02;
+  color: darken(colors.$scorpio-green-04, 10);
+}
+.bg-green-03 {
+  background-color: colors.$scorpio-green-03;
+  color: colors.$white;
+}
+.bg-green-04 {
+  background-color: colors.$scorpio-green-04;
+  color: colors.$white;
+}
+.bg-green-05 {
+  background-color: colors.$scorpio-green-05;
+  color: colors.$white;
+}
+
+@include media-breakpoint-down(xs) {
+  .text-center-xs {
+    text-align: center;
+  }
 }

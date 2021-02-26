@@ -10,32 +10,25 @@
   }
 
   .navigation-logo, .navigation-item, .navigation-item a{
-    color: colors.$blue-002;
     transition: color 0.2s ease;
     &:hover {
-      color: colors.$blue-003;
       text-decoration: none;
     }
   }
 
   .dropdown-item {
-    color: colors.$blue-002;
+    color: colors.$font-color-dark;
     transition: color 0.2s ease;
-    padding: 0.25rem 0;
-    margin: 0 1.5rem;
+    //padding: 0.25rem 0;
+    //margin: 0 1.5rem;
     width: auto;
     &.active, &:active {
-      color: colors.$blue-004;
-      background-color: transparent;
-      border-bottom: 3px solid colors.$blue-004;
-      &:hover {
-        color: lighten(colors.$blue-004, 10%);
-        border-bottom-color: lighten(colors.$blue-004, 10%);
-      }
+      color: colors.$white;
+      background-color: colors.$highlight-color;
     }
     &:hover {
-      color: colors.$blue-003;
-      text-decoration: none;
+      color: colors.$white;
+      background-color: lighten(colors.$highlight-color, 10%);
     }
   }
 
@@ -76,16 +69,13 @@
 
     &.active {
       a {
-        color: colors.$blue-004;
         border-bottom-style: solid;
-        border-bottom-color: colors.$blue-004;
         transition: border-bottom-color 0.2s ease;
       }
 
       &:hover {
         a {
-          color: lighten(colors.$blue-004, 10%);
-          border-bottom-color: lighten(colors.$blue-004, 10%);
+
         }
       }
     }
@@ -102,13 +92,10 @@
       a {
         margin: 0 0.5rem;
         &.active {
-          color: colors.$blue-004;
           border-bottom-style: solid;
-          border-bottom-color: colors.$blue-004;
           transition: border-bottom-color 0.2s ease;
           &:hover {
-            color: lighten(colors.$blue-004, 10%);
-            border-bottom-color: lighten(colors.$blue-004, 10%);
+
           }
         }
       }

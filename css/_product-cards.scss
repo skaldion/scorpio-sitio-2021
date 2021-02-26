@@ -4,6 +4,10 @@
 .product-cards-section {
   padding: 50px 0;
 
+  h4 {
+    font-weight: bold;
+  }
+
   .card {
     &.side-img {
       flex-direction: row;
@@ -13,8 +17,17 @@
       }
     }
   }
-  .card-img-left {
 
+  .card-img-left {
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+  }
+
+  .card {
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
 }
