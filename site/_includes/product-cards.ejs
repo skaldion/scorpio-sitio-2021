@@ -10,7 +10,7 @@
         <% } %>
         <div class='row'>
     <% cards.forEach(data => {%>
-        <div class='col-md-4'>
+        <div class='col-lg-4 col-md-6 col-sm-12'>
             <% if(data.href) { %> <a href='<%- data.href %>'> <% } %>
             <div class="card side-img mb-4 box-shadow">
                 <img class="card-img-left" alt="<%- data.imgAlt %>" src="<%- data.imgSrc %>">
