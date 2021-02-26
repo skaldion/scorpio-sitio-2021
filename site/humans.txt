@@ -2,14 +2,17 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
-    <name> -- <role> -- <twitter>
+    Armando Lopez   -- Front-end dev
+    David Orduna    -- Design + image editing
+    Diego Orduna    -- Front-end dev
 
 # THANKS
 
-    <name>
+    Diego Remirez
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
+    Bootstrap
+    jQuery, popper
     11ty
