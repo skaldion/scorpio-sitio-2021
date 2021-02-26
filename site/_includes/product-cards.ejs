@@ -10,14 +10,16 @@
         <% } %>
         <div class='row'>
     <% cards.forEach(data => {%>
-        <div class='col-md-4'>
+        <div class='col-lg-4 col-md-6 col-sm-12'>
             <% if(data.href) { %> <a href='<%- data.href %>'> <% } %>
-            <div class="card side-img mb-4 box-shadow">
-                <img class="card-img-left" alt="<%- data.imgAlt %>" src="<%- data.imgSrc %>">
+            <div class="card mb-4 box-shadow">
+                <div class="card-img-top">
+                    <img alt="<%- data.imgAlt %>" src="<%- data.imgSrc %>">
+                </div>
                 <div class="card-body">
                     <h4><%- data.title %></h4>
                     <p class="card-text"><%- data.description %></p>
-                    <span class="text-sm-left"><%- data.price %></span>
+                    <span class="higlight text-sm-left"><%- data.price %></span>
                 </div>
             </div>
             <% if(data.href) { %> </a> <% } %>
