@@ -178,6 +178,17 @@ img {
   color: colors.$white;
 }
 
+.adh-solvent-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/gum.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
 .empresa-bg {
   background-size: cover;
   background-attachment: local;
