@@ -4,7 +4,7 @@ description: Química Scorpio se reinventa para cuidarte.
 date: 2021-03-01
 layout: blog-base.ejs
 author: Diego Remirez
-imgSrc: '/images/ambient.jpg'
+imgSrc: '/images/sanati.jpg'
 href: '/blog/pandemia'
 tags:
 - pandemia
@@ -26,4 +26,4 @@ Desde Químicas Scorpio queremos aprovechar este espacio para resaltar la import
 
 Algunos de nuestros clientes durante el último año han sido desde restaurantes de comida italiana hasta domicilios privados. Aquí te mostramos un ejemplo de nuestro trabajo con estos clientes que depositaron su confianza en Químicas Scorpio.
 
-![](/images/ambient.jpg)
+![](/images/prod.jpg)
