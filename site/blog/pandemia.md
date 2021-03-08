@@ -4,7 +4,7 @@ description: Química Scorpio se reinventa para cuidarte.
 date: 2021-03-01
 layout: blog-base.ejs
 author: Diego Remirez
-imgSrc: '/images/sanati.jpg'
+imgSrc: '/images/sanati.webp'
 href: '/blog/pandemia'
 imgAlt: "Chica usando gel antibacterial"
 tags:
@@ -27,4 +27,4 @@ Desde Químicas Scorpio queremos aprovechar este espacio para resaltar la import
 
 Algunos de nuestros clientes durante el último año han sido desde restaurantes de comida italiana hasta domicilios privados. Aquí te mostramos un ejemplo de nuestro trabajo con estos clientes que depositaron su confianza en Químicas Scorpio.
 
-![productos de sanitización](/images/prod.jpg)
+![productos de sanitización](/images/prod.webp)
