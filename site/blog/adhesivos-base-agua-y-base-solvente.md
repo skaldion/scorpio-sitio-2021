@@ -6,7 +6,7 @@ layout: blog-base.ejs
 author: Diego Remirez
 imgSrc: '/images/glue.webp'
 href: '/blog/adhesivos-base-agua-y-base-solvente'
-imgAlt: "Niña decorando pasta francesa"
+imgAlt: "Aplicador de adhesivo base agua"
 tags:
 - adhesivos
 - base agua
